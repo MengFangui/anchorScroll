@@ -94,6 +94,8 @@ jQuery.anchorScroll = function(elem1, elem2) {
 		clickPoint();
 		//文章内容绑定滚动事件
 		scrollWin();
+		//目录的第一个a触发click事件
+		$(elem2 + ' a').first().click();
 	}
 	init();
 }
